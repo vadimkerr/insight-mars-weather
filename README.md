@@ -2,7 +2,7 @@
 
 Install required python modules:
 
-`python -m pip install -r requirements.txt`
+`python3 -m pip install -r requirements.txt`
 
 Give execution permission to the script:
 
@@ -17,7 +17,7 @@ You can run the script either as:
 
 or:
 
-`python -m core`
+`python3 -m core`
 
 
 Also, you can run the script in docker container:
@@ -33,4 +33,4 @@ Py.test is used as a testing suite
 
 Run tests:
 
-`python -m pytest tests/`
+`python3 -m pytest tests/`
