@@ -9,6 +9,11 @@ Give execution permission to the script:
 `chmod +x ./core/mars_weather.py`
 
 
+Set API_KEY env variable (you can obtain one here: https://api.nasa.gov/):
+
+`export API_KEY=<your_api_key>`
+
+
 # Run
 
 You can run the script either as:
@@ -24,7 +29,7 @@ Also, you can run the script in docker container:
 
 Build: `docker build -t mars-weather .`
 
-Run: `docker run mars-weather`
+Run: `docker run -e API_KEY=<your_api_key> mars-weather`
 
 
 # Test

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 from typing import List
 import requests
 
@@ -10,7 +11,7 @@ else:
     from core.temperature_summary import TemperatureSummary
 
 
-API_KEY = '6knNnWxgygNMQeYIgs0MnsR0CJ2O435OOJSPF93o'
+API_KEY = os.environ['API_KEY']
 QUERY_URL = 'https://api.nasa.gov/insight_weather/'
 QUERY_PARAMS = {
     'api_key': API_KEY,
